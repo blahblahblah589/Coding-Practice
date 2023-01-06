@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coding Practice</title>
+</head>
+
+<body>
+<h1>HTML Combined Practice</h1>
+  
+<h2>1-List:</h2>
+    <h3>Cake!</h3>
+    <label name="Ingredients" value="Ingredients">Ingredients</label>
+        <ul name="Ingreditens" id="ingredients">
+            <li>Sugar</li>
+            <li>Butter</li>
+                <ul>
+                    <li>Dairy</li>
+                    <li>Plant based</li>
+                </ul>
+            <li>Flour</li>
+            <li>Chocolate</li>
+        </ul>
+
+    <label name="Steps" value="Steps">Steps</label>
+        <ol name="Steps" id="steps" type="I"> 
+            <li>Mix it all in a bowl</li>
+            <li>Stick it in the oven</li>
+            <li>Bob's your uncle</li>
+        </ol>
+
+<h2>2-Table:</h2>
+<fieldset>
+        <legend>Nerd Shit</legend>
+    <table>
+        <caption>History of the USS Starhip Enterprise</caption>
+        <th name="Starships">Starships</th>
+        <th name="Capacity">Capacity</th>
+        <th name="Cpatain">Captain</th>
+        <tr>
+            <td>Enterprise NCC-1701-D</td>
+            <td>1100</td>
+            <td>Jean-Luc Picard</td>
+        </tr>
+        <tr>
+            <td>Enterprise NCC-1701-C</td>
+            <td>800</td>
+            <td>Rachel Garrett</td>
+        </tr>
+        <tr>
+            <td>Enterprise NCC-1701-B</td>
+            <td>500</td>
+            <td>John Harriman</td>
+        </tr>
+        <tr>
+            <td>Enterprise NCC-1701</td>
+            <td>300</td>
+            <td>James T. Kirk</td>
+        </tr>
+    </table>
+</fieldset>
+
+<h2>3-Form:</h2>
+<form method="post">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="Name">
+  <br>
+    <label for="email">Email Address:</label>
+    <input type="email" id="email" name="Email Address">
+  <br>
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="Password">
+  <br>
+    <label for="dob">Date of Birth:</label>
+    <input type="date" id="dob" name="Date of Birth">
+  <br>
+    <p for="walks">How many walks do you take a week?</p>
+    <div>
+      <input type="radio" id="0" name="Walks">
+      <label for="walks" value="0">0</label>
+    <div>
+      <input type="radio" id="1-2" name="Walks">
+      <label for="walks" value="1-2">1-2</label>
+    </div>
+    <div>
+      <input type="radio" id="3-4" name="Walks">
+      <label for="walks" value="3-4">3-4</label>
+    </div>
+    <div>
+      <input type="radio" id="5-6" name="Walks">
+      <label for="walks" value="5-6">5-6</label>
+    </div>
+    <p for="exercise">How do you exercise?</p>
+      <div>
+      <input type="checkbox" id="don't" name="exercise">
+      <label for="exercise" value="I don't">I don't</label>
+    </div>
+    <div>
+      <input type="checkbox" id="running" name="exercise">
+      <label for="exercise" value="Running">Running</label>
+    </div>
+    <div>
+      <input type="checkbox" id="swimming" name="exercise">
+      <label for="exercise" value="Swimming">Swimming</label>
+    </div>
+    <div>
+      <input type="checkbox" id="cycling" name="exercise">
+      <label for="exercise" value="Cycling">Cycling</label>
+    </div>
+    <div>
+      <input type="checkbox" id="gym" name="exercise">
+      <label for="exercise" value="Gym">Gym</label>
+    </div>
+    <br>
+    <label for="file" value="User picture" name="Upload">Upload a picture of yourself!</label>
+    <input type="file" id="upload" name="Upload">
+    <br>
+    <label for="color" value="Favourite color" name="color">Pick your favourite colour!</label>
+    <input type="color" id="color" name="color">
+    <br>
+    <label for="age" value="How old are you?" name="Age">How old are you?</label>
+    <input type="number" min="18" max="100" id="age" name="age">
+    <br>
+    <label for="comments" value="User comments" name="comments">Please tell us how we can improve this form!</label>
+    <br>
+    <textarea rows="10" cols="30" id="comments" name="comments" placeholder="Type here"></textarea>
+    <br>
+    <label for="insecurity" value="Did you like this form?" name="insecurity">Did you like this form?</label>
+    <select id="insecurity" name="insecurity">
+      <option value="Yes" name="insecurity">Yes</option>
+      <option value="No" name="insecurity">No</option>
+    </select>
+    <br>
+      <input id="reset" type="reset">
+      <input id="submit" type="submit">
+</form>
+
+<h2>4-Images and iFrames</h2>
+    <picture>
+        <source srcset="https://cloudfour.com/examples/img-currentsrc/images/kitten-large.png" media="(orientation:portrait)">
+        <img src="https://cloudfour.com/examples/img-currentsrc/images/kitten-large.png" alt="Cat" width="400px" height="200px">
+    </picture>
+    <br>
+    <iframe src="https://www.wikipedia.org/" title="Wikiepedia" height="400px" width="400px">
+    </iframe>
+
+<h2>5-Audio and Video</h2>
+    <audio controls loop>
+  <source src="" 
+          type="audio/mpeg">
+  
+  <source src="" 
+          type="audio/ogg">  
+</audio>
+<video controls width="500">
+
+    <source src=""
+            type="video/webm">
+
+    <source src=""
+            type="video/mp4">
+</video>
+
+</body>
+
+</html>
